@@ -5,11 +5,14 @@
     <title>로그인</title>
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <%
+    String id = (String)session.getAttribute("id");
+    %>
 </head>
 <body>
     <div class="card">
         <div class="card-header">
-            <h2>로그인</h2>
+            <h2>환영합니다 <%= id %></h2>
         </div>
         <div class="card-body">
             <form id="login-form" action="loginProcess.jsp" method="post">
