@@ -51,7 +51,7 @@ public class BoardDAO extends DBConnPool {
 			while(rs.next()) {
 				BoardDTO dto = new BoardDTO();
 				dto.setNum(rs.getString("num"));
-				dto.setTitle(rs.getString("thtile"));
+				dto.setTitle(rs.getString("title"));
 				dto.setContent(rs.getString("content"));
 				dto.setPostdate(rs.getDate("postdate"));
 				dto.setId(rs.getString("id"));
